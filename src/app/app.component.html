@@ -1,0 +1,7 @@
+<button class="btn btn-primary" (click)="isCameraOpen=!isCameraOpen; scan()">{{isCameraOpen==true?'Close':'Scan'}}</button>
+<div id="cameraArea">
+  <qr-scanner id="camera" [debug]="false" [stopAfterScan]="true" [updateTime]="500"></qr-scanner>
+</div>
+<div class="form-group">
+  <label>{{code}}</label>
+</div>
